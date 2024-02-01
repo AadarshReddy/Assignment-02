@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Assignment_02.Models.Customer>
+
+@{
+    ViewBag.Title = "CusList";
+   
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+<h2>Customer List:</h2>
+@foreach (var name in ViewBag.CusList)
+{
+    <ul><li>@name</li></ul>
+}
+
+<h2>CusList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Designation)
+        </th>
+        <th></th>
+    </tr>
+
+
+
+</table>

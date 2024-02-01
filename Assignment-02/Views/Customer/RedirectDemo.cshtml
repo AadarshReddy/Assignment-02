@@ -1,0 +1,22 @@
+﻿@model Assignment_02.Models.Customer
+
+@{
+    ViewBag.Title = "RedirectDemo";
+    Layout = "~/Views/Shared/_CustomLayout.cshtml";
+}
+
+<h2>RedirectDemo</h2>
+
+<div>
+    <h3>@ViewData["msg"]</h3>
+    <hr />
+    <dl class="dl-horizontal">
+        <h3>@ViewData["msg"]</h3>
+       
+
+    </dl>
+</div>
+<p>
+    
+    @Html.ActionLink("Back to List", "Index")
+</p>
